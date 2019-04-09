@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            h1{
+                margin-top: 100px;
+                margin-left: 500px;
+                margin-right: 500px;
+                font-size: 50px;
+                color:black;
+                background-color: white;
+            }
+            #b1{
+                margin-top: 220px;
+                margin-left: 400px;
+                font-size: 35px;
+                font-family: comic sans ms;
+                background-color: green;
+                color: white;
+            }
+
+            #b2{
+                top: 400px;
+                left: 800px;
+                position: absolute;
+                font-size: 35px;
+                font-family: comic sans ms;
+                background-color: red;
+                color: white;
+            }
+            
+            
+        </style>
+        <script>
+            function fun(){
+                
+                x=parseInt(Math.random()*1100);
+                y=parseInt(Math.random()*500);
+                document.getElementById("b2").style.left=x+"px";
+                document.getElementById("b2").style.top=y+"px";
+            }
+            function msg1(){
+                alert("Be Happy, Keep Smiling");
+            }
+            
+            function msg2(){
+                alert("Try to be Happy");
+            }
+
+        
+        
+        </script>
+    </head>
+    <body>
+        <h1>Are You Happy!</h1>
+        <input type="button" value="Yes" id="b1" onclick="msg1()">
+        <input type="button" value="No" id="b2" onmouseover="fun()" onclick="msg2()">
+        <br>
+    </body>
+</html>
